@@ -13,7 +13,7 @@ http://localhost:4000/reviews/
 
 #### Single Value
 
-http://localhost:4000/products/1
+http://localhost:4000/products/1 is equal to http://localhost:4000/products?id=1
 
 ###### Here 1 is the value of id property.
 
