@@ -7,15 +7,15 @@
 
 #### All Items
 
-http://localhost:4000/products/ 
-or
-http://localhost:4000/reviews/ 
+  http://localhost:4000/products/ 
+    or
+  http://localhost:4000/reviews/ 
 
 #### Single Item
 
-http://localhost:4000/products/1 is equal to http://localhost:4000/products?id=1
+  http://localhost:4000/products/1 is equal to http://localhost:4000/products?id=1
 
-###### Here 1 is the value of id property.
+      Here 1 is the value of id property.
 
 #### Filtering
 
@@ -23,47 +23,54 @@ http://localhost:4000/products/1 is equal to http://localhost:4000/products?id=1
 
       Structure: ?PROPERTY_NAME=PROPERTY_VALUE
 
-http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE
+      http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE
 
-Ex. http://localhost:4000/products?category=electronics
+  Ex. http://localhost:4000/products?category=electronics
 
 ##### Filtering by multiple value
 
       Structure: ?PROPERTY_NAME=PROPERTY_VALUE&PROPERTY_NAME=PROPERTY_VALUE
 
-http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE&PROPERTY_NAME=PROPERTY_VALUE
+      http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE&PROPERTY_NAME=PROPERTY_VALUE
 
-Ex. http://localhost:4000/products?category=electronics&price=2000
+  Ex. http://localhost:4000/products?category=electronics&price=2000
 
 
 ##### Nested Filtering 
 
       Structure: ?PROPERTY_NAME.NESTED_PROPERTY_NAME=PROPERTY_VALUE
 
-http://localhost:4000/products?PROPERTY_NAME.NESTED_PROPERTY_NAME=PROPERTY_VALUE
+      http://localhost:4000/products?PROPERTY_NAME.NESTED_PROPERTY_NAME=PROPERTY_VALUE
 
-Ex. http://localhost:4000/products?discount.type=shipping
+  Ex. http://localhost:4000/products?discount.type=shipping
 
 #### Sorting
 
-      Structure: _sort=PROPERTY_NAME&_order=ORDER_TYPE
       ORDER_TYPE= asc(default)/desc
 
 ##### Ascending Order Sort
 
-http://localhost:4000/products?_sort=PROPERTY_NAME
+      Structure: ?_sort=PROPERTY_NAME
+
+      http://localhost:4000/products?_sort=PROPERTY_NAME
+      
+  Ex. http://localhost:4000/products?_sort=price
 
 ##### Descending Order Sort
 
-http://localhost:4000/products?_sort=PROPERTY_NAME&_order=ORDER_TYPE
+     Structure: ?_sort=PROPERTY_NAME&_order=ORDER_TYPE
 
-Ex. http://localhost:4000/products?_sort=price&_order=desc
+     http://localhost:4000/products?_sort=PROPERTY_NAME&_order=ORDER_TYPE
+
+  Ex. http://localhost:4000/products?_sort=price&_order=desc
 
 ##### Sorting by multiple value
 
-http://localhost:4000/products?_sort=PROPERTY_NAME,PROPERTY_NAME&_order=ORDER_TYPE,ORDER_TYPE
+     Structure: ?_sort=PROPERTY_NAME,PROPERTY_NAME&_order=ORDER_TYPE,ORDER_TYPE
 
-Ex. http://localhost:4000/products?_sort=price,category&_order=asc,desc
+     http://localhost:4000/products?_sort=PROPERTY_NAME,PROPERTY_NAME&_order=ORDER_TYPE,ORDER_TYPE
+
+  Ex. http://localhost:4000/products?_sort=price,category&_order=asc,desc
 
 
 #### Pagination
