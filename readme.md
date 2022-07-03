@@ -159,23 +159,24 @@
   Ex. http://localhost:4000/reviews?_expand=product
   
   
+  
 #### OTHERS HTTP REQUEST
 
-    ###### Create:
+###### Create:
     
     Method: POST
     
     url: http://localhost:4000/products
     
     
-    ###### Update:
+###### Update:
     
     Method: PATCH/PUT
     
     url: http://localhost:4000/products/id
     
     
-    ###### Delete:
+###### Delete:
     
     Method: DELETE
     
