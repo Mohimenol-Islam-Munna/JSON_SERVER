@@ -108,6 +108,22 @@
      http://localhost:4000/products?PROPERTY_NAME_gte=VALUE&PROPERTY_NAME_lte=VALUE
 
   Ex. http://localhost:4000/products?price_gte=2000&price_lte=3000
+  
+  ###### Not Equal
+
+     Structure: ?PROPERTY_NAME_ne=VALUE
+
+     http://localhost:4000/products?PROPERTY_NAME_ne=VALUE
+
+  Ex. http://localhost:4000/products?id_ne=1
+  
+  ###### Start With
+
+     Structure: ?PROPERTY_NAME_like=^VALUE
+
+     http://localhost:4000/products?PROPERTY_NAME_like=^VALUE
+
+  Ex. http://localhost:4000/products?category_like=^a
 
 
 #### Pagination
