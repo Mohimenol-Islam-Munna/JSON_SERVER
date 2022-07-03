@@ -17,7 +17,11 @@ http://localhost:4000/products/1
 
 ###### Here 1 is the value of id property.
 
-#### Pagination
+#### Filtering
+
+http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE
+
+Ex. http://localhost:4000/products?category=electronics
 
 #### Pagination
 
