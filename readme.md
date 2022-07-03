@@ -83,6 +83,27 @@
 
   Ex. http://localhost:4000/products?_page=1&_limit=2
 
-#### Pagination
+#### OPERATORS
+
+###### Greater Than or Equal
+
+     Structure: ?PROPERTY_NAME_gte=VALUE
+
+     http://localhost:4000/products?PROPERTY_NAME_gte=VALUE
+     
+     *Total items in per page is 10 (Default).
+
+  Ex. http://localhost:4000/products?price_gte=4000
+  
+  ###### Less Than or Equal
+
+     Structure: ?PROPERTY_NAME_lte=VALUE
+
+     http://localhost:4000/products?PROPERTY_NAME_lte=VALUE
+     
+     *Total items in per page is 10 (Default).
+
+  Ex. http://localhost:4000/products?price_lte=4000
+
 
 #### Pagination
