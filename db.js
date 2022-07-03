@@ -1,5 +1,5 @@
-const data = require("./data");
+const p = require("./p.json");
 
 module.exports = {
-  data,
+  p,
 };
