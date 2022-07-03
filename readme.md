@@ -138,23 +138,22 @@
 
   ###### Access Child From Parent
 
-     Structure: ?_embed=URI_IR_ENTRY_POINT
+     Structure: ?_embed=ROUTES
 
      http://localhost:4000/products?_embed=reviews
      
-     *Here URI_IR_ENTRY_POINT is products, reviews. These are the main property of main json object.
+     *Here ROUTES is products, reviews. These are the main property of main json object.
 
   Ex. http://localhost:4000/products?q=in
   
   
   ###### Access Parent From Child
 
-     Structure: ?_embed=URI_IR_ENTRY_POINT
+     Structure: ?_embed=ROUTES
 
-     http://localhost:4000/reviews?_expand=URI_IR_ENTRY_POINT
+     http://localhost:4000/reviews?_expand=ROUTES
      
-     *Here URI_IR_ENTRY_POINT is products, reviews. These are the main property of main json object.
-     value of _expand or URI_IR_ENTRY_POINT must be singular.
+     *value of _expand or ROUTES must be singular.
 
   Ex. http://localhost:4000/reviews?_expand=product
   
