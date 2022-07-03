@@ -75,6 +75,12 @@
 
 #### Pagination
 
+     Structure: ?_page=PAGE_NUMBER&_limit=TOTAL_ITEM_PER_PAGE
+
+     http://localhost:4000/products?_page=PAGE_NUMBER&_limit=TOTAL_ITEM_PER_PAGE
+
+  Ex. http://localhost:4000/products?_page=1&_limit=2
+
 #### Pagination
 
 #### Pagination
