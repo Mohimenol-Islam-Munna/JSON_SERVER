@@ -1,4 +1,15 @@
-## Create json server for practice forntend with data.
+## ALL OPERATION ON JSON SERVER.
+
+{
+  "products": [],
+  "reviews": []
+}
+
+#### All Value
+
+http://localhost:4000/products/ 
+or
+http://localhost:4000/reviews/ 
 
 #### Single Value
 
