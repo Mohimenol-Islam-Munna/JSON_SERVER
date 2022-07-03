@@ -124,6 +124,14 @@
      http://localhost:4000/products?PROPERTY_NAME_like=^VALUE
 
   Ex. http://localhost:4000/products?category_like=^a
+  
+  ###### Full Text Search
+
+     Structure: ?q=VALUE
+
+     http://localhost:4000/products?q=VALUE
+
+  Ex. http://localhost:4000/products?q=in
 
 
 #### Pagination
