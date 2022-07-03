@@ -183,11 +183,8 @@
     url: http://localhost:4000/products/id
   
   
-  
-  
-  
-  
-  
-  
+#### GENERATE FAKE DATA
+
+[`Faker Js`](https://fakerjs.dev/)
   
   
