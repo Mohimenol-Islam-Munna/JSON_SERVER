@@ -90,8 +90,6 @@
      Structure: ?PROPERTY_NAME_gte=VALUE
 
      http://localhost:4000/products?PROPERTY_NAME_gte=VALUE
-     
-     *Total items in per page is 10 (Default).
 
   Ex. http://localhost:4000/products?price_gte=4000
   
@@ -100,10 +98,16 @@
      Structure: ?PROPERTY_NAME_lte=VALUE
 
      http://localhost:4000/products?PROPERTY_NAME_lte=VALUE
-     
-     *Total items in per page is 10 (Default).
 
   Ex. http://localhost:4000/products?price_lte=4000
+  
+   ###### Range
+
+     Structure: ?PROPERTY_NAME_gte=VALUE&PROPERTY_NAME_lte=VALUE
+
+     http://localhost:4000/products?PROPERTY_NAME_gte=VALUE&PROPERTY_NAME_lte=VALUE
+
+  Ex. http://localhost:4000/products?price_gte=3000&price_lte=3000
 
 
 #### Pagination
