@@ -134,4 +134,41 @@
   Ex. http://localhost:4000/products?q=in
 
 
-#### Pagination
+#### RELATIONSHIP
+
+  ###### Access Child From Parent
+
+     Structure: ?_embed=URI_IR_ENTRY_POINT
+
+     http://localhost:4000/products?_embed=reviews
+     
+     *Here URI_IR_ENTRY_POINT is products, reviews. These are the main property of main json object.
+
+  Ex. http://localhost:4000/products?q=in
+  
+  
+  ###### Access Parent From Child
+
+     Structure: ?_embed=URI_IR_ENTRY_POINT
+
+     http://localhost:4000/reviews?_expand=URI_IR_ENTRY_POINT
+     
+     *Here URI_IR_ENTRY_POINT is products, reviews. These are the main property of main json object.
+     value of _expand or URI_IR_ENTRY_POINT must be singular.
+
+  Ex. http://localhost:4000/reviews?_expand=product
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
