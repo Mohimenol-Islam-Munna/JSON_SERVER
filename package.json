@@ -1,0 +1,24 @@
+{
+  "name": "json_server",
+  "version": "1.0.0",
+  "description": "create json server for practice forntend with data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server --watch db.json -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohimenol-Islam-Munna/JSON_SERVER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohimenol-Islam-Munna/JSON_SERVER/issues"
+  },
+  "homepage": "https://github.com/Mohimenol-Islam-Munna/JSON_SERVER#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
