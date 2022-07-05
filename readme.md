@@ -1,21 +1,26 @@
 ## ALL OPERATION ON JSON SERVER.
 
+#### JSON FORMAT
+
 {
   "products": [],
   "reviews": []
 }
 
-#### All Items
 
-  http://localhost:4000/products/ 
-    or
-  http://localhost:4000/reviews/ 
+#### Routes
+
+ 1. http://localhost:4000/products/ 
+    
+ 2. http://localhost:4000/reviews/ 
+
 
 #### Single Item
 
   http://localhost:4000/products/1 is equal to http://localhost:4000/products?id=1
 
       Here 1 is the value of id property.
+
 
 #### Filtering
 
@@ -26,6 +31,7 @@
       http://localhost:4000/products?PROPERTY_NAME=PROPERTY_VALUE
 
   Ex. http://localhost:4000/products?category=electronics
+
 
 ##### Filtering by multiple value
 
@@ -44,9 +50,11 @@
 
   Ex. http://localhost:4000/products?discount.type=shipping
 
+
 #### Sorting
 
       ORDER_TYPE= asc(default)/desc
+
 
 ##### Ascending Order Sort
 
@@ -56,6 +64,7 @@
       
   Ex. http://localhost:4000/products?_sort=price
 
+
 ##### Descending Order Sort
 
      Structure: ?_sort=PROPERTY_NAME&_order=ORDER_TYPE
@@ -63,6 +72,7 @@
      http://localhost:4000/products?_sort=PROPERTY_NAME&_order=ORDER_TYPE
 
   Ex. http://localhost:4000/products?_sort=price&_order=desc
+
 
 ##### Sorting by multiple value
 
@@ -83,6 +93,7 @@
 
   Ex. http://localhost:4000/products?_page=1&_limit=2
 
+
 #### OPERATORS
 
 ###### Greater Than or Equal
@@ -93,6 +104,7 @@
 
   Ex. http://localhost:4000/products?price_gte=4000
   
+  
   ###### Less Than or Equal
 
      Structure: ?PROPERTY_NAME_lte=VALUE
@@ -100,6 +112,7 @@
      http://localhost:4000/products?PROPERTY_NAME_lte=VALUE
 
   Ex. http://localhost:4000/products?price_lte=4000
+  
   
   ###### Range
 
@@ -109,6 +122,7 @@
 
   Ex. http://localhost:4000/products?price_gte=2000&price_lte=3000
   
+  
   ###### Not Equal
 
      Structure: ?PROPERTY_NAME_ne=VALUE
@@ -117,6 +131,7 @@
 
   Ex. http://localhost:4000/products?id_ne=1
   
+  
   ###### Start With
 
      Structure: ?PROPERTY_NAME_like=^VALUE
@@ -124,6 +139,7 @@
      http://localhost:4000/products?PROPERTY_NAME_like=^VALUE
 
   Ex. http://localhost:4000/products?category_like=^a
+  
   
   ###### Full Text Search
 
@@ -156,7 +172,6 @@
      *value of _expand or ROUTES must be singular.
 
   Ex. http://localhost:4000/reviews?_expand=product
-  
   
   
 #### OTHERS HTTP REQUEST
